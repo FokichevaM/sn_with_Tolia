@@ -1,9 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import LoginPage from './pages/LoginPage';
+import {
+  BrowserRouter as Router,
+  Route,
+  Navigate,
+  Routes,
+  BrowserRouter,
+} from 'react-router-dom';
+import AuthPage from './pages/AuthPage';
 
 function App() {
-  return <LoginPage />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" />} />
+      </Routes>
+      <AuthPage />;
+    </BrowserRouter>
+  );
 }
 
 export default App;
