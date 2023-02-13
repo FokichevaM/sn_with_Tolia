@@ -4,6 +4,7 @@ import logo from '../../assets/svgs/ic_logo.svg';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import LoginView from './LoginView';
 import SignUpView from './SignUpView';
+import SignUpAdditionalView from './SignUpAdditionalView';
 
 const AuthPage = () => {
   return (
@@ -14,6 +15,7 @@ const AuthPage = () => {
         <Routes>
           <Route path="login" element={<LoginView />} />
           <Route path="signup" element={<SignUpView />} />
+          <Route path="signupadditional" element={<SignUpAdditionalView />} />
         </Routes>
       </div>
     </div>

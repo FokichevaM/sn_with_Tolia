@@ -12,9 +12,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/searchDashboard" />} />
+        <Route path="/" element={<Navigate to="/login" />} />
       </Routes>
-      <AuthPage />;
+      <AuthPage />
     </BrowserRouter>
   );
 }

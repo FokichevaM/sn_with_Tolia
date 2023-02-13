@@ -111,10 +111,7 @@ button {
   }
 
   input:focus ~ .floating-label,
-  input:not(:placeholder-shown) ~ .floating-label
-  // .custom-text-input:has(input:not(:placeholder-shown)) span,
-  // .custom-text-input:has(input:focus) span
-  {
+  input:not(:placeholder-shown) ~ .floating-label {
     top: -10px;
     transform: scale(0.8);
     color: rgb(198, 198, 198);

@@ -46,7 +46,9 @@ const SignUpView = () => {
           </span>
         </div>
 
-        <button>CONTINUE</button>
+        <Link to="/signupadditional">
+          <button>CONTINUE</button>
+        </Link>
       </form>
       <div className="footer-question-box">
         You already have an account? &nbsp; &nbsp;
