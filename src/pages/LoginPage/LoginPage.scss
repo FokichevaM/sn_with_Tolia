@@ -1,0 +1,16 @@
+.remember-checkbox {
+  color: #bdbdbd;
+  line-height: 21px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 10px;
+
+  a {
+    color: #bdbdbd;
+    line-height: 21px;
+    text-decoration: none;
+    &:hover {
+      color: #ffb800;
+    }
+  }
+}

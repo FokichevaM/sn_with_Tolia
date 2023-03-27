@@ -1,4 +1,5 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css);
 @import url('./fonts.scss');
 
 body {
@@ -9,16 +10,38 @@ body {
 
 a {
   color: #ffb800;
+  text-decoration: none;
 }
 
 button {
   width: 100%;
-  height: 64px;
-  border: rgba(255, 184, 0, 1);
+  height: 36px;
   border-radius: 5px;
+  border: none;
   background-color: rgba(255, 184, 0, 1);
-  margin: 30px 0 30px;
+  margin: 40px 0 30px;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  &.lg {
+    height: 64px;
+  }
+
+  &.link {
+    background-color: transparent;
+    color: rgba(255, 184, 0, 1);
+    border: none;
+    justify-content: start;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 12px 0 0;
+  }
 }
 
 // CUSTOM CHECKBOX
@@ -83,8 +106,10 @@ button {
 // CUSTOM TEXT INPUT
 .custom-text-input {
   position: relative;
+  display: flex;
 
-  input {
+  input,
+  textarea {
     font-size: 16px;
     height: 45px;
     width: 100%;
@@ -96,10 +121,16 @@ button {
     color: white;
   }
 
-  input::placeholder {
+  textarea {
+    height: auto;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
     color: transparent;
   }
-  input:focus::placeholder {
+  input:focus::placeholder,
+  textarea:focus::placeholder {
     color: transparent;
   }
 
@@ -107,13 +138,25 @@ button {
     position: absolute;
     pointer-events: none;
     top: 18px;
+    left: 0;
     transition: 0.2s ease all;
   }
 
   input:focus ~ .floating-label,
-  input:not(:placeholder-shown) ~ .floating-label {
+  input:not(:placeholder-shown) ~ .floating-label,
+  textarea:focus ~ .floating-label,
+  textarea:not(:placeholder-shown) ~ .floating-label {
     top: -10px;
     transform: scale(0.8);
     color: rgb(198, 198, 198);
   }
+
+  textarea:focus ~ .floating-label,
+  textarea:not(:placeholder-shown) ~ .floating-label {
+    top: -18px;
+  }
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }

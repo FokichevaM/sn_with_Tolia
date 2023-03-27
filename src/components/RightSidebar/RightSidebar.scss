@@ -1,0 +1,28 @@
+.right-sidebar {
+  padding: 20px 0 0 28px;
+}
+
+.hashtags-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(58, 68, 76, 1);
+
+  button {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.hashtag {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(58, 68, 76, 1);
+
+  &:first-child {
+    border-top: 1px solid rgba(58, 68, 76, 1);
+  }
+}
+
+.hashtag-row {
+  padding: 9px 14px;
+}

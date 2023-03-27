@@ -1,0 +1,16 @@
+export const interests = [
+  'sport',
+  'programming',
+  'swimming',
+  'dance',
+  'bowling',
+  'singing',
+  'music',
+  'traveling',
+  'photography',
+  'reading',
+  'yoga',
+  'art',
+  'blog writing',
+  'volunteering',
+];

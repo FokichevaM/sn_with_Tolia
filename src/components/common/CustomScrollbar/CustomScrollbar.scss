@@ -1,0 +1,12 @@
+.custom-scrollbar {
+  .scrollbar-container.vertical {
+    background-color: #424242;
+    width: 15px;
+
+    .scrollbar {
+      background-color: #bfbfbf;
+      border-radius: 10px;
+      width: 13px;
+    }
+  }
+}
