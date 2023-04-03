@@ -14,9 +14,7 @@ const MainLayout = ({ children }) => {
           <div className="col-md-3">
             <NavigationMenu />
           </div>
-          <div className="col-md-6" style={{ backgroundColor: 'orange' }}>
-            {children}
-          </div>
+          <div className="col-md-6">{children}</div>
           <div className="col-md-3">
             <RightSidebar />
           </div>

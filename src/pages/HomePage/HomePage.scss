@@ -1,0 +1,28 @@
+.home-page {
+  padding: 26px 0;
+  height: 100%;
+  border-left: 1px solid rgba(58, 68, 76, 1);
+  border-right: 1px solid rgba(58, 68, 76, 1);
+  font-family: Manrope;
+
+  .top-pannel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 0 25px 40px 25px;
+  }
+
+  .greetings {
+    font-weight: 400;
+  }
+
+  .link {
+    font-weight: 700;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+  }
+}

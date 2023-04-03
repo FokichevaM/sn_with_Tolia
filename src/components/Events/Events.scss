@@ -1,0 +1,54 @@
+.event {
+  border-bottom: 1px solid rgba(58, 68, 76, 1);
+  padding: 40px 40px 40px 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  svg {
+    margin-right: 10px;
+  }
+
+  .avatar {
+    width: 10%;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    // align-items: center;
+
+    .description {
+      padding-bottom: 14px;
+
+      .user-name {
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+
+    .details {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 24px;
+      width: 70%;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    .related-interests {
+      .label {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

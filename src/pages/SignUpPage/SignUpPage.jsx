@@ -27,7 +27,7 @@ const SignUpPage = () => {
         onStepChange={(state) => setActiveStep(state.activeStep)}
         instance={setWizardProps}
         transitions={0}
-        initialStep={3}
+        // initialStep={1}
       >
         <BasicInformation stepName={'basic'} goToNamedStep={goToNamedStep} />
         <AdditionalInformation
